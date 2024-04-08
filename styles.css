@@ -1,0 +1,82 @@
+:root {
+  --header-background-color: #231f20;
+  --page-primary-color: #1071b4;
+  --page-secondary-color: #7ab529;
+  --bg-secondary-color: rgba(122, 181, 41, 0.07);
+  --page-tertiary-color: #fd8d05;
+  --bs-spacer-6: 50px;
+  --bs-navbar-padding-x: 0 !important;
+  --text-dark-gray: #404040;
+  --text-light-gray: #6A6A6A;
+}
+
+body,
+html {
+  font-family: "inter", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    margin-top: auto;
+}
+
+.smaller-text-style {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+@media only screen and (min-width: 0px) {
+  .nav-link {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 768px) {
+ 
+}
+
+
+@media only screen and (min-width: 992px) {
+  .px-general {
+    padding-right: var(--bs-spacer-6) !important;
+    padding-left: var(--bs-spacer-6) !important;
+  }
+}
+
+.section-background-image{
+    background-image: url(./assets/section-1bg.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+}
+
+.mockup-container {
+  position: relative;
+  width: 100%; 
+  padding-top: 56.25%; 
+  background-image: url('./assets/System Mockup.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+}
+
+.rectangle {
+    padding: 30px;
+    margin-bottom: 20px; 
+    background-color: var( --bg-secondary-color); 
+    min-height: 200px; 
+}
